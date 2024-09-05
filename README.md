@@ -10,7 +10,7 @@ The TFs can be used to estimate single-cell differentiation potency.
 
 The innovation of BSfate is adopting a theory-driven research paradigm, where the computational method is inspired by quantitative mathematical modeling. BSFate considers the bistable gene circuit as an integrated system and identifies TF pairs whose temporal expression dynamics align with the theoretical model.
 
-! [tupian2](./image/Theoretical20%model20%analysis.jpg)
+! [tupian2](image/Theoretical20%model20%analysis.jpg)
 
 Our benchmark testing on simulated and real experimental datasets has shown that BSFate consistently outperforms baseline methods in identifying the known driver regulators of cell fate decisions.
 
