@@ -10,7 +10,7 @@ The TFs can be used to estimate single-cell differentiation potency.
 
 The innovation of BSfate is adopting a theory-driven research paradigm, where the computational method is inspired by quantitative mathematical modeling. BSFate considers the bistable gene circuit as an integrated system and identifies TF pairs whose temporal expression dynamics align with the theoretical model.
 
-![tupian2](image/Theoretical20%model20%analysis.jpg)
+![tupian2](./image/Theoretical20%model20%analysis.jpg)
 
 Our benchmark testing on simulated and real experimental datasets has shown that BSFate consistently outperforms baseline methods in identifying the known driver regulators of cell fate decisions.
 
@@ -39,9 +39,9 @@ The following shows specific applications on simulated data and two sets of real
 
 The switch gene and transient gene of simulated data are used as known data here because of the simple branching of simulated data. Below, we will take Astrocyte lineage as an example.
 
-! [GRN_simulation_A](./image/GRN_simulation_A.jpg)
+![GRN_simulation_A](./image/GRN_simulation_A.jpg)
 
-! [PCA_simulation_A](./image/PCA_simulation_A.jpg)
+![PCA_simulation_A](./image/PCA_simulation_A.jpg)
 ```
 # Astrocyte lineage
 
@@ -60,8 +60,8 @@ BSfate_TFs=get_singleTF_BSfate_rank(SignificanceScore)
 ```
 The following is the presentation of TF's significance score results and performance
 
-! [tupian4_1](./image/results_simulation_A.jpg)
-! [tupian4_2](./image/other_DE_compare_A.jpg)
+![tupian4_1](./image/results_simulation_A.jpg)
+![tupian4_2](./image/other_DE_compare_A.jpg)
 
 - hESC DATASET
 ```
@@ -77,8 +77,8 @@ Switch_test_hESC=Switch_nls(scExp_hESC_TF)
 Tansient_test_hESC=Tansient_nls(scExp_hESC_TF)
 Pro_screen_TFs=Screen_TF(Switch_test_hESC,Tansient_test_hESC,top_n=20)
 ```
-! [tupian5_1](./image/hotplot_hESC.jpg)
-! [tupian5_2](./image/switch_transient_TF_hESC.jpg)
+![tupian5_1](./image/hotplot_hESC.jpg)
+![tupian5_2](./image/switch_transient_TF_hESC.jpg)
 
 ```
 ####step 3 Calculate the significance scores
@@ -87,13 +87,13 @@ SignificanceScore=get_SignificanceScore(scExp_hESC_TF,Hs_switch_n,Hs_transient_n
 ####step 4 Order cell fate determinants
 BSfate_TFs=get_singleTF_BSfate_rank(SignificanceScore)
 ```
-! [tupian6_1](./image/score_hESC.jpg)
-! [tupian6_2](./image/results_hESC.jpg)
+![tupian6_1](./image/score_hESC.jpg)
+![tupian6_2](./image/results_hESC.jpg)
 ```
 Following are comparison of BSFate with Monocle3-DE, tradeSeq, ImpulseDE2, and scFates, on astrocyte branch. The precision is plotted as a function of the number of top-ranked genes involved in the four ground truth gene sets. And the prioritization of driver regulators predicted by BSFate. TFs are sorted in descending order according to their significance sores. When TFs are annotated within the ground truth sets, they are connected.
 ```
-! [tupian7_1](./image/other_DE_compare_hESC.jpg)
-! [tupian7_2](./image/GO_results_hESC.jpg)
+![tupian7_1](./image/other_DE_compare_hESC.jpg)
+![tupian7_2](./image/GO_results_hESC.jpg)
 
 ## **Input** **files**
 
@@ -103,7 +103,7 @@ BSfate requires a single-cell RNA-sequencing gene expression object as input. Th
 ## **Output**
 
 The output of BSfate is TFs and significance score ranking.
-! [tupian9](./image/Output.jpg)
+![tupian9](./image/Output.jpg)
 
 ## **Authors**
 
