@@ -4,13 +4,13 @@ BSfate is a bistable switch circuits prediction method for directional single-ce
 
 BSfate takes a scRNA-seq dataset from the directional differentiation process as input. First, pseudo-time information of cells can be obtained through trajectory inference methods such as slingshot. BSFate models the gene expression as a nonlinear function of pseudo-time and utilizes a nonlinear least squares method to screen TFs that display switch-like or transient activation patterns. By combinatorically paired, BSFate forms candidate gene pairs and calculates the significance score for each candidate. The pairs with the top rank are anticipated to constitute the core cell fate circuits. Meanwhile, TFs can be ordered based on the most prominent rank of their respective gene pairs for further investigation or experimental validation.
 
-! [tupian1](./image/Computational%20method.jpg)
+! [tupian1](./image/Computational20%method.jpg)
 
 The TFs can be used to estimate single-cell differentiation potency.
 
 The innovation of BSfate is adopting a theory-driven research paradigm, where the computational method is inspired by quantitative mathematical modeling. BSFate considers the bistable gene circuit as an integrated system and identifies TF pairs whose temporal expression dynamics align with the theoretical model.
 
-! [tupian2](./image/Theoretical%20model%20analysis.jpg)
+! [tupian2](./image/Theoretical20%model20%analysis.jpg)
 
 Our benchmark testing on simulated and real experimental datasets has shown that BSFate consistently outperforms baseline methods in identifying the known driver regulators of cell fate decisions.
 
