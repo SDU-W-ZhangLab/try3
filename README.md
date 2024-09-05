@@ -10,7 +10,7 @@ The TFs can be used to estimate single-cell differentiation potency.
 
 The innovation of BSfate is adopting a theory-driven research paradigm, where the computational method is inspired by quantitative mathematical modeling. BSFate considers the bistable gene circuit as an integrated system and identifies TF pairs whose temporal expression dynamics align with the theoretical model.
 
-![tupian2](./image/Theoretical20%model20%analysis.jpg)
+![tupian2](https://github.com/SDU-W-ZhangLab/try3/blob/main/image/Theoretical%20model%20analysis.jpg)
 
 Our benchmark testing on simulated and real experimental datasets has shown that BSFate consistently outperforms baseline methods in identifying the known driver regulators of cell fate decisions.
 
@@ -40,7 +40,6 @@ The following shows specific applications on simulated data and two sets of real
 The switch gene and transient gene of simulated data are used as known data here because of the simple branching of simulated data. Below, we will take Astrocyte lineage as an example.
 
 ![GRN_simulation_A](./image/GRN_simulation_A.jpg)
-
 ![PCA_simulation_A](./image/PCA_simulation_A.jpg)
 ```
 # Astrocyte lineage
@@ -98,11 +97,13 @@ Following are comparison of BSFate with Monocle3-DE, tradeSeq, ImpulseDE2, and s
 ## **Input** **files**
 
 BSfate requires a single-cell RNA-sequencing gene expression object as input. This can include raw counts, as well as normalized counts, as long as normalization preserves ranking of input gene values within a cell. The gene expression matrix takes the following form.
-! [tupian8](./image/Input.jpg)
+
+![tupian8](./image/Input.jpg)
 
 ## **Output**
 
 The output of BSfate is TFs and significance score ranking.
+
 ![tupian9](./image/Output.jpg)
 
 ## **Authors**
