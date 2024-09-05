@@ -40,6 +40,7 @@ The following shows specific applications on simulated data and two sets of real
 The switch gene and transient gene of simulated data are used as known data here because of the simple branching of simulated data. Below, we will take Astrocyte lineage as an example.
 
 ! [GRN_simulation_A](./image/GRN_simulation_A.jpg)
+
 ! [PCA_simulation_A](./image/PCA_simulation_A.jpg)
 ```
 # Astrocyte lineage
