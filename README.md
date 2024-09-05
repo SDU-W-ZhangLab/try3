@@ -20,7 +20,9 @@ BSFate shows a significant application in investigating the regulatory mechanism
 We recommend installing the CytoTRACE 2 package using the devtools package from the R console. If you do not have devtools installed, you can install it by running install.packages("devtools") in the R console.
 
 devtools::install_github("SDU-W-Zhanglab/BSfate")
+
 library(BSfate)
+
 
 ## **Running** **BSfate**
 Running BSfate is very simple, after loading the library, it only takes four steps to complete the prediction of cell fate determinants:
@@ -45,6 +47,9 @@ The switch gene and transient gene of simulated data are used as known data here
 # Astrocyte lineage
 
 ###step 1 and step 2 Known data acquisition
+library(stats)
+library(entropy)
+library("RColorBrewer")
 data(astrocyte)
 astrocyte_exprs = t(as.matrix(astrocyte))
 Switch__TF=c("Hes5","Scl","Stat3","Aldh1L")
@@ -65,6 +70,9 @@ The following is the presentation of TF's significance score results and perform
 - hESC DATASET
 ```
 ###step 1 Known data acquisition
+library(stats)
+library(entropy)
+library("RColorBrewer")
 data(scExp_hESC)
 data(pesudo_hESC)
 data(TF_human)
