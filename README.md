@@ -103,7 +103,7 @@ BSfate requires a single-cell RNA-sequencing gene expression object as input. Th
 ## **Output**
 
 The output of BSfate is TFs and significance score ranking.
-! [tupian9]((./image/Output.jpg)
+! [tupian9](./image/Output.jpg)
 
 ## **Authors**
 
